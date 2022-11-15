@@ -13,7 +13,7 @@ const machine = createWriteStream(SAVE_TO_FILE_PATHSPEC);
 
 let progressDone = false;
 Tesseract.recognize(
-    fileURLToPath(`file://${__dirname}/translations/bit_diploma__page${ currentPage }.png`),
+    fileURLToPath(`file:///${__dirname}/translations/bit_diploma__page${ currentPage }.png`),
     'lit',
     { 
         logger: (txt) => {
